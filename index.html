@@ -25,19 +25,28 @@
     container {
       padding: 20px; /*This will provide spacing around our main content/research*/
     }
+    .navigationBar {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
     /*Top Shelf Navigation Bar*/
   </style>
 </head>
-/*Navigation Bar for our website*/
+
+<div class="navigationBar">
   <nav>
-      <a href="#Who needs the most help">Helping</a>
-      <a href="#How to build resilience">Resilience</a>
-      <a href="#How does the UN check progress?">Progression Check</a>
+      <a href="#Help">Helping</a>
+      <a href="#Resilience">Resilience</a>
+      <a href="#Progression Check">Progression Check</a>
       <a href="#">Research</a>
       <a href="#">Assistance</a>
       <a href="#">Our Support</a>
   </nav>
-
+</div>
 <body>
   <h1>SDG Goal: 1.5</h1>
   <div class="boxes">
@@ -51,10 +60,10 @@
     </pre>
   </div>
 
-  /*Our main content wrapper*/
+ 
   <div class="container">
 
-    /*Our Research Information should go here*/
+   <section id="Help" class="section container">
     <div class="boxes">
       <h2>Who needs the most help</h2>
       <ol>
@@ -65,8 +74,10 @@
       <li>Migrants, refugees, Indigenous groups</li>
       </ol>
       </div>
+      </section>
 
-    /*Our Research Information should go here*/
+    
+    <section id="Resilience" class="section container">
    <div class="boxes">
       <h2>How to build resilience</h2>
   <ol>
@@ -82,8 +93,9 @@
       <li>If one job fails, they have backup options</li>
   </ol>
    </div>
+   </section>
        
-    /*Our Research Information should go here*/
+    <section id="Progression Check" class="section container">
     <div class="boxes">
       <h2>How does the UN check progress?</h2>
       <h3>They look at things like:</h3>
@@ -93,6 +105,7 @@
         <li>Whether countries have disaster‑preparedness plans?</li>
       </ol>
       </div>
+    </section>
     
 </body>
 </html>
