@@ -109,20 +109,37 @@ body {
 
 /*This should enable us to be able to link separate webpages together.*/
 .card-link {
-text-decoration: none;
+  text-decoration: none;
   color: inherit;
-  display: block;
+  /* Removed display:block so the entire section is no longer clickable */
+  display: inline;
 }
 
 .card-link .card {
-  cursor: pointer;
-transition: transform 0.2s ease;
+  cursor: default; /* No more pointer cursor on the whole box */
+  transition: transform 0.2s ease;
 }
 
 .card-link .card:hover {
-transform: scale(1.03);
+  transform: none; /* Remove hover zoom since it's no longer a link */
 }
 
+/* Creation of the button that takes the view of the website to the ourSupport page */
 .ourSupportButton {
-  
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+/* Hover effect for the ourSupport button*/
+.ourSupportButton:hover {
+  background-color: #5ecbff;
+  color: #000;
 }
