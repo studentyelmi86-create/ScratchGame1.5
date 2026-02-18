@@ -20,7 +20,7 @@ body {
 /* Styling for our navigation bar and maybe it might provide smooth transtions, I'm uncertain about the animation. */
 .navigationBar a {
   color: #fefefe;
-  padding: 16px 20px;
+  padding: 16px 29px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -59,7 +59,7 @@ body {
   top: 100%; /* This makes the sub sections appear underneath the main section */
   left: 0;
   background-color: #11152b;
-  min-width: 200px;
+  min-width: 50px;
   border: 3px solid #0a3d62;
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
   z-index: 999; /* This should prevent any overlay issues.*/
