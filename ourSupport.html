@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Our Support Page</title>
+  <meta charset="UTF-8">
+  <title>Our Support</title>
+  <link rel="stylesheet" href="ourSupport.css">
 </head>
-<h1>They gave up on me</h1>
+
 <body>
+  
+  <form class="scheduler-form" action="thankyou.html" method="GET">
+
+  <div class="support-container">
+    <h1>Disaster Relief Support Scheduler</h1>
+    <p class="intro">
+      If you or someone you know has been affected by a natural disaster, 
+      use this scheduler to request assistance. Our team will reach out 
+      as soon as possible.
+    </p>
+
+    <div class="scheduler-box">
+      <h2>Request Help</h2>
+
+      <form class="scheduler-form">
+        
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="location">Your Location</label>
+        <input type="text" id="location" placeholder="City, State" required>
+
+        <label for="disaster">Type of Disaster</label>
+        <select id="disaster" required>
+          <option value="">Select one...</option>
+          <option value="flood">Flood</option>
+          <option value="wildfire">Wildfire</option>
+          <option value="hurricane">Hurricane</option>
+          <option value="tornado">Tornado</option>
+          <option value="earthquake">Earthquake</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="date">Preferred Contact Date</label>
+        <input type="date" id="date" required>
+
+        <label for="details">Additional Details</label>
+        <textarea id="details" placeholder="Describe your situation..." rows="5"></textarea>
+
+        <button type="submit" class="submit-btn">Schedule Assistance</button>
+      </form>
+    </div>
+  </div>
 
 </body>
-
 </html>
